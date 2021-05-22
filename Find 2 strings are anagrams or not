@@ -28,3 +28,25 @@ public class Hello
 	  System.out.println("Both the strings army and mary are not anagrams");
 	}
 }
+
+
+
+//Simple method just sort and check equal or not
+import java.util.*;
+public class Hello 
+{
+    public static void main(String[] args) 
+    {
+            Scanner sc=new Scanner(System.in);
+	     String str1=sc.nextLine();
+	     char[] ch=str1.toCharArray();
+	     Arrays.sort(ch);
+	     String str2=sc.nextLine();
+	     char[] ch2=str2.toCharArray();
+	     Arrays.sort(ch2);
+	    if(Arrays.equals(ch,ch2))
+	    System.out.print("anagram");
+	    else
+	    System.out.print("not anagram");   
+	}
+}
