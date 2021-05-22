@@ -1,0 +1,12 @@
+import java.util.*;
+public class Hello 
+{
+    public static void main(String[] args) 
+    {
+		 Scanner sc=new Scanner(System.in);
+	     String str1=sc.nextLine();//aaba
+	     char[] ch=str1.toCharArray();
+	     Arrays.sort(ch);//aaab
+	     System.out.print(String.valueOf(ch));
+	}
+}
